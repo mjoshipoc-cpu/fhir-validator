@@ -32,11 +32,14 @@ class FHIRResourceValidator:
             return False, None, [{"msg": f"Unknown resourceType: {self.resource_type}"}]
 
     def validate_required_fields(self, data: dict) -> list:
-        return [
-            f"Missing required field: {field}"
-            for field in self.required_fields
-            if not data.get(field)
-        ]
+        errors = []
+        for field in self.required_fields:
+            if isinstance(field, tuple):
+                if not any(data.get(option) for option in field):
+                    errors.append(f"Missing required field: one of {field}")
+            elif not data.get(field):
+                errors.append(f"Missing required field: {field}")
+        return errors
 
     def validate_value_sets(self, data: dict) -> list:
         errors = []
