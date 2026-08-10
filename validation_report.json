@@ -1,0 +1,100 @@
+{
+    "resourceType": "Bundle",
+    "total_entries": 10,
+    "valid_entries": 9,
+    "invalid_entries": 1,
+    "overall_valid": false,
+    "entry_results": [
+        {
+            "resourceType": "Pathhhient",
+            "overall_valid": false,
+            "structural_errors": [
+                "'Pathhhient' is not valid FHIRModel (element type) name!"
+            ],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "entry_index": 0
+        },
+        {
+            "resourceType": "Encounter",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 1
+        },
+        {
+            "resourceType": "Condition",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 2
+        },
+        {
+            "resourceType": "MedicationRequest",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 3
+        },
+        {
+            "resourceType": "Claim",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 4
+        },
+        {
+            "resourceType": "ExplanationOfBenefit",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 5
+        },
+        {
+            "resourceType": "DiagnosticReport",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 6
+        },
+        {
+            "resourceType": "DocumentReference",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 7
+        },
+        {
+            "resourceType": "Claim",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 8
+        },
+        {
+            "resourceType": "Provenance",
+            "structurally_valid": true,
+            "structural_errors": [],
+            "required_field_errors": [],
+            "value_set_errors": [],
+            "overall_valid": true,
+            "entry_index": 9
+        }
+    ]
+}

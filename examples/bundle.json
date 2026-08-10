@@ -1,0 +1,51 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {"use": "official", "system": "http://hospital.org/mrn", "value": "12345"}
+        ],
+        "name": [
+          {"use": "official", "family": "Smith", "given": ["John"]}
+        ],
+        "gender": "male",
+        "birthDate": "1980-01-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {"use": "official", "family": "Doe", "given": ["Jane"]}
+        ],
+        "gender": "not-a-valid-code"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "verificationStatus": {"coding": [{"code": "confirmed"}]},
+        "criticality": "high",
+        "patient": {"reference": "Patient/example"}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "criticality": "extreme",
+        "type": "allergy"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "subject": {"reference": "Patient/example"},
+        "clinicalStatus": {"coding": [{"code": "active"}]}
+      }
+    }
+  ]
+}

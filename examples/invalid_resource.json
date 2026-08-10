@@ -1,0 +1,8 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "clinicalStatus": {"coding": [{"code": "active"}]},
+  "verificationStatus": {"coding": [{"code": "confirmed"}]},
+  "type": "allergy",
+  "category": ["food"],
+  "criticality": "unable-to-assess"
+}
